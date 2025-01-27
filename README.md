@@ -1,6 +1,6 @@
-# Bash Completion For Synopsys (Black Duck) Detect
+# Bash Completion For Black Duck Detect
 
-Suggests options and parameters to complete Synopsys (Black Duck) Detect
+Suggests options and parameters to complete Black Duck Detect
 commands.
 
 # Installation
@@ -12,7 +12,7 @@ For example:
 
 ```bash
 sudo apt install bash-completion
-sudo sh -c 'curl -sL https://raw.githubusercontent.com/thaljef/synopsys-detect-bash-completion/master/detect > /etc/bash_completion.d/detect'
+sudo sh -c 'curl -sL https://raw.githubusercontent.com/thaljef/blackduck-detect-bash-completion/master/detect > /etc/bash_completion.d/detect'
 bash -l; # To start new shell
 ```
 
@@ -39,7 +39,7 @@ in your `$PATH`:
 ```bash
 #!/bin/bash
 
-bash <(curl -s -L https://detect.synopsys.com/detect7.sh) $*
+bash <(curl -s -L https://detect.blackduck.com/detect10.sh) $*
 ```
 # Examples
 

@@ -2,8 +2,8 @@
 
 #-----------------------------------------------------------------------------
 
-# Bash completions for Synopsys (Black Duck) Detect commands.
-# See https://detect.synopsys.com/doc
+# Bash completions for Black Duck Detect commands.
+# See https://detect.blackduck.com/doc
 
 #-----------------------------------------------------------------------------
 
@@ -21,7 +21,7 @@ _complete_option_from_help()
     # and `awk` are available; check `bash` version is compatible.
 
     local word=$1
-    local detect_jars=($(ls -t $HOME/synopsys-detect/download/synopsys-detect*.jar /tmp/synopsys-detect*.jar 2> /dev/null))
+    local detect_jars=($(ls -t $HOME/detect/download/detect*.jar /tmp/detect*.jar 2> /dev/null))
     local latest_detect_jar=${detect_jars[0]}
     local latest_detect_options=${latest_detect_jar}.options
 
@@ -208,7 +208,7 @@ _detect_completion()
         --logging.level.com.blackducksoftware.integration)
             _complete_option_param "$_detect_log_levels" $cur
             ;;
-        --logging.level.com.synopsys.integration)
+        --logging.level.com.blackduck.integration)
             _complete_option_param "$_detect_log_levels" $cur
             ;;
         --detect.tools)
