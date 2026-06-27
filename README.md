@@ -39,7 +39,7 @@ in your `$PATH`:
 ```bash
 #!/bin/bash
 
-bash <(curl -s -L https://detect.blackduck.com/detect10.sh) $*
+bash <(curl -s -L https://detect.blackduck.com/detect.sh) $*
 ```
 # Examples
 
